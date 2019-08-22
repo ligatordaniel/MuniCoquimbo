@@ -1,0 +1,398 @@
+﻿
+*{
+box-sizing: border-box;
+font-family: arial;
+}
+
+a:link{
+text-decoration: none;
+}
+
+body{
+max-width: 1080px;
+max-height: 1920px;
+margin:auto;
+}
+
+html{
+max-width: 1080px;
+max-height: 1920px;
+margin:auto;
+}
+
+#proyectos{
+margin: 0 auto;
+text-align:left;
+background-color: #fff;
+}
+
+/* INICIO */
+
+.contenedorbanner{
+position:relative;
+top:0;
+right:0;
+width:100%;
+height: auto;
+padding-top: 1%;
+font-weight: bold;
+background-color: #001a5a;
+text-align: left;
+vertical-align: middle;
+margin-bottom:3%;
+}
+
+.imagenbanner{
+width:40%;
+height: auto;
+position:relative;
+left: 29%;
+margin-bottom:3%;
+}
+
+.row{
+text-align: center; 
+}
+
+#contenedor{
+display: table-cell;
+padding: 0.5em;
+width:50%;
+position: relative;
+overflow:hidden;
+}
+
+#contenedor img{
+-webkit-transition:all .9s ease;
+width:90%;
+}
+
+#contenedor:hover img{
+-webkit-transform:scale(1.1);
+transform:scale(1.1);
+}
+
+#contenedor__imagen{
+width:90%;
+padding:1em;
+}
+
+.protector{
+position: absolute;
+z-index: 1;	
+}
+
+.contenedor-protector{
+text-align: center;
+}
+
+.boton-ir-interfaz{
+position: absolute;
+width:20%;
+height: auto;
+z-index: 10;
+margin-left: 20%;
+margin-top: 100%;	
+}
+
+/* NOTICIAS */
+
+.contenedorimagenedenoticia{
+margin-bottom: 3%;    
+}
+
+.imagendenoticia{
+width:35%;
+height: auto;
+position:relative;
+left: 30%;
+}
+
+.contenedorimagenesdeslide{
+width:95%;
+height: 400px;
+margin-left: 2%;
+margin-bottom: 14%;
+}
+
+.imagenesdeslide{
+border-radius: 40px 40px 40px 40px;
+margin-left: 4%;
+}
+
+.contenedordetwitteryvideo{
+width:95%;
+height: 840px;
+margin-left: 9%;
+display:block;
+position: relative;
+}
+
+.contenedortwitter{
+width:48%;
+height: 830px;
+background-color: #EAEDED;
+margin:5px;
+display: inline-block;
+border-radius: 10px 10px 10px 10px;
+float:left;
+position: absolute;
+}
+
+.twitter{
+position: absolute;
+width:99%;
+padding:20px;
+border-radius: 10px 10px 10px 10px;
+z-index: 1;
+}
+
+.transparentdiv{
+position: absolute;
+width:92%;
+height: 820px;
+padding:20px;
+border-radius: 10px 10px 10px 10px;	
+background-color: none;
+z-index: 10;
+}
+
+.contenedorvideos{
+width:40%;
+height: auto;
+margin:5px;  
+float: right;  
+display: inline-block;
+margin-top: -1%;
+margin-right:7%;
+}
+
+.video{
+text-align: center;
+margin-top:4%;
+margin-bottom:-3%;
+float:left;
+}
+
+.flotante-noticias{
+display: scroll;
+position:fixed;
+top:220px;
+left:20px;
+animation: mymove 3s infinite;
+animation-delay: 3s;
+}
+
+@keyframes mymove {
+from {left:20px;}
+to {left:40px;}	
+}
+
+
+
+/* SERVICIOS MUNICIPALES */
+
+.imagenesdeservicio{
+width:85%;
+height: auto;
+position:relative;
+left: 8%;
+margin-bottom:3%;
+padding: 3px;
+}
+
+.imagendeservicio{
+width:35%;
+height: auto;
+position:relative;
+left: 30%;
+margin-bottom:8%;
+}
+
+.flotante-servicios{
+display: scroll;
+position:fixed;
+top:225px;
+left:20px;
+animation: mymove 3s infinite;
+animation-delay: 3s;
+}
+
+@keyframes mymove {
+from {left:20px;}
+to {left:40px;}	
+}
+
+/* PREGUNTAS FRECUENTES */
+
+#preguntas{
+width: 100%;   
+}
+
+.contenedorimagendepreguntas{
+margin-bottom:10%;
+}
+
+.imagendepreguntas{
+width:35%;
+height: auto;
+position:relative;
+left: 30%;
+}
+
+#accordion-container {
+width: 100%;
+margin:0;
+clear:both;
+}
+ 
+.accordion-titulo {
+position: relative;
+display: block;
+text-decoration: none;
+background-color:#d8d9dd;
+border:none;
+width: 85%;
+height: auto;
+padding: 4%;
+margin:2em;
+margin-left: 7%;
+border-radius: 30px 30px 30px 30px;
+text-align: left;
+font-style:;
+font-size: 1.8em;
+color: #727176;
+}
+
+.accordion-titulo span.toggle-icon:before {
+content:"﹀";
+color: #983335;
+margin-right:10px;
+font-size: 50px;
+}
+ 
+.accordion-titulo.open span.toggle-icon:before {
+content:"︿";
+}
+ 
+.accordion-titulo span.toggle-icon {
+position: absolute;
+top:40 px;
+right: 20px;
+font-size: 38px;
+font-weight:bold;
+vertical-align: middle;
+}
+ 
+.accordion-content {
+display: none;
+padding-left:25px;
+overflow: auto;
+margin-top: -20px;
+}
+ 
+.accordion-content img {
+display: block;
+width: 95%;
+height: auto;
+margin-top: -200px;
+margin-left:1%;
+}
+
+#flotante-preguntas{
+display: scroll;
+position:absolute;
+top:0px;
+left:20px;
+animation: mymove 3s infinite;
+animation-delay: 3s;
+}
+
+@keyframes mymove {
+from {left:20px;}
+to {left:40px;}	
+}
+
+/* CONTACTO */
+
+.contenedorcontactos{
+width:100%;
+text-align: center;	
+margin-top: 10%;
+margin-bottom: 10%;
+}
+
+#formulario{
+text-align: left;
+padding: 1.7em;
+width:85%;
+border:none;
+border-radius: 5px 5px 5px 5px;
+background-color: lightgrey;
+font-size: 100%;
+font-weight: bold;
+vertical-align: middle;
+}
+
+#formulariomensaje{
+text-align: left;
+padding: 2em 0em 30em 1.3em;
+width:85%;
+border:none;
+border-radius: 5px 5px 5px 5px;
+background-color: lightgrey;
+font-size: 100%;
+font-weight: bold;
+}
+
+.formularioenviar{
+padding:1.5em 4.5em 1.5em 4.5em; 
+border-radius: 30px 30px 30px 30px;
+border:none;
+background-color: #692d49;
+margin-top:3%;
+margin-left:52%;
+font-size: 20px;
+font-weight: bold;
+font-style: ;
+color:#fff;
+}
+
+.flotante-contacto{
+display: scroll;
+position:absolute;
+top:220px;
+left:20px;
+animation: mymove 3s infinite;
+animation-delay: 3s;
+}
+
+@keyframes mymove {
+from {left:20px;}
+to {left:40px;}	
+}
+
+/* FOOTER */
+
+.contenedorfooter{
+width:100%;
+margin:0;
+position: fixed;
+bottom:0;
+}
+
+.footer{
+width:100%;
+margin:0;
+position: fixed;
+bottom:0;
+}
+
+#footerimagen{
+width:100%;
+margin:0;
+margin-bottom: 0;
+position: fixed;
+left:0;
+bottom:0;
+}

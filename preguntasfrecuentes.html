@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>PREGUNTAS FRECUENTES</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<script type="text/javascript" src="js/acordion.js"></script>
+  <script type="text/javascript" src="js/timeout.js"></script>
+	<link rel="stylesheet" href="dist/css/animsition.min.css">
+	<script type="text/javascript" src="js/jsanimaciones.js"></script>
+	<script src="dist/js/animsition.min.js"></script>
+</head>
+
+<body style="overflow-y: hidden;">
+
+<section id="proyectos" class="animsition"
+  data-animsition-in-class="fade-in"
+  data-animsition-in-duration="700"
+  data-animsition-out-class="fade-out"
+  data-animsition-out-duration="500">
+
+  <!-- BANNER -->
+	<div class="contenedorbanner">
+		<img src="img/coquimbno.png" alt="" class="imagenbanner"> 
+	</div>
+
+	<div id="preguntas" class="animsition"
+		data-animsition-in-class="fade-in"
+		data-animsition-in-duration="700"
+		data-animsition-out-class="fade-out"
+		data-animsition-out-duration="500"> 
+
+    <!-- IMAGEN DE PREGUNTAS FRECUENTES -->
+		<div class="contenedorimagendepreguntas">
+  		 <img src="img/preguntas.png" alt="" class="imagendepreguntas"> 
+
+  <!-- BOTON FLOTANTE -->
+      <div id="flotante-preguntas" href='#'> <a href="Inicio.html"> <img src='img/home2.png' width="130px" border="0" class="animsition"
+            data-animsition-in-class="fade-in-up-sm"
+            data-animsition-in-duration="2000"
+            data-animsition-out-class="fade-out-up-sm"
+            data-animsition-out-duration="5000"> </a> 
+      </div>
+	   </div>
+	
+    <!-- PREGUNTAS -->
+    <div id="container-main">
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Cómo renovar mi Licencia?<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/>
+          </div>  
+      </div>
+      
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Cúales son mis derechos de aseo?<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/>
+          </div>
+      </div>
+
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Cómo conseguir un permiso de circulación?<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/>
+          </div>
+      </div>
+
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Dónde contactar a mi cuadrante de seguridad ciudadana?<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/> 
+          </div>
+      </div>
+
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Dónde renovar mis documentos?<span class="toggle-icon"></span></a>
+
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/> 
+          </div>
+      </div>
+
+
+      <div id="accordion-container" class="animsition"
+          data-animsition-in-class="fade-in-left-sm"
+          data-animsition-in-duration="1000"
+          data-animsition-out-class="fade-out-left-sm"
+          data-animsition-out-duration="800">
+          <a href="#" class="accordion-titulo">¿Dónde ubicar mis servicios de atención primaria?<span class="toggle-icon"></span></a>
+          <div class="accordion-content">
+              <img src="img/preguntas/emergencia.png" alt=""/>
+       </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT -->
+  <script>
+  	$(".accordion-titulo").click(function(){
+  		
+     var contenido=$(this).next(".accordion-content");
+  			
+     if(contenido.css("display")=="none"){ //open		
+        contenido.slideDown(250);			
+        $(this).addClass("open");
+     }
+     else{ //close		
+        contenido.slideUp(250);
+        $(this).removeClass("open");	
+    }
+  							
+  });
+  </script>
+</section>
+
+  <!-- FOOTER -->
+	<footer class="contenedorfooter">
+		<div class="footer">
+			<img src="img/imagenfooter.png" alt="" id="footerimagen" class="animsition"
+  				data-animsition-in-class="fade-in"
+  				data-animsition-in-duration="700"
+  				data-animsition-out-class="fade-out"
+  				data-animsition-out-duration="500"> 
+		</div>
+	</footer>
+</body>
+</html>

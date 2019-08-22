@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>SERVICIOS MUNICIPALES</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="dist/css/animsition.min.css">
+	<script type="text/javascript" src="js/timeout.js"></script>
+	<script type="text/javascript" src="js/jsanimaciones.js"></script>
+	<script src="dist/js/animsition.min.js"></script>
+</head>
+
+<body style="">
+
+
+<section id="proyectos" class="animsition"
+  	data-animsition-in-class="fade-in"
+  	data-animsition-in-duration="700"
+  	data-animsition-out-class="fade-out"
+  	data-animsition-out-duration="500">
+
+  	<!-- BANNER -->
+	<div class="contenedorbanner">
+		<img src="img/coquimbno.png" alt="" class="imagenbanner"> 
+	</div>
+
+
+	<div class="Servicios"> 
+
+		 <!-- IMAGEN DE SERVICIOS MUNICIPALES -->
+		<div class="ImagenesServicios"> 
+			<img src="img/serviciosmunicipales.png" alt="" class="imagendeservicio"> 
+		</div>
+
+		<!-- BOTON FLOTANTE -->
+	    <div class='flotante-servicios' href='#'>
+	    	 <a href="Inicio.html">
+	    	 <img src='img/home2.png' width="140px" border="0" class="animsition"
+		     data-animsition-in-class="fade-in-up-sm"
+	         data-animsition-in-duration="2000"
+	         data-animsition-out-class="fade-out-up-sm"
+	         data-animsition-out-duration="5000"></a>
+        </div> 
+
+
+		<!-- DEPARTAMENTO DE GESTION -->
+		<div class="fancybox" href="#videoyoutube">
+		  
+			<a href="http://www.municoquimbo.cl" data-fancybox-type="iframe" class="ifancybox"><img  src="img/serviciosm/departamentogestion.png" alt="" class="imagenesdeservicio"></a>
+
+		</div>
+
+            <div id="videoyoutube1_div"> </div>
+      
+        <!-- AUDIO DIDECO -->
+		<div class="fancybox" href="#videoyoutube">
+		  
+		  <a href="http://www.latercera.com" data-fancybox-type="iframe" class="ifancybox"><img id="videoyoutube2" src="img/serviciosm/audiodideco.png"alt="" class="imagenesdeservicio"></a>
+
+		</div>
+
+        <div style="display: none"> 
+            <div id="videoyoutube2">
+
+            </div>
+        </div>
+
+		<!-- SISTEMA DE PROTECCION SOCIAL -->
+		<div class="fancybox" href="#videoyoutube">
+		  
+		   <a href="http://www.as.com" data-fancybox-type="iframe" class="ifancybox"><img id="videoyoutube3" src="img/serviciosm/sistemadeproteccionsocial.png" alt="" class="imagenesdeservicio"></a>
+
+		</div>
+
+        <div style="display: none"> 
+            <div id="videoyoutube3">
+                
+            </div>
+        </div>
+
+		<!-- ROL DE EVALUOS -->
+		<div class="fancybox" href="#videoyoutube">
+
+			<a href="http://www.latercera.com" data-fancybox-type="iframe" class="ifancybox"> <img id="videoyoutube4" src="img/serviciosm/roldeevualuos.png" alt="" class="imagenesdeservicio"></a>
+		 
+		</div>
+
+        <div style="display: none"> 
+            <div id="videoyoutube4">
+                
+            </div>
+        </div>
+
+		<!-- JUZGADOS DE POLICIA -->
+		<div class="fancybox" href="#videoyoutube">
+	
+		 	 <a href="http://www.latercera.com" data-fancybox-type="iframe" class="ifancybox"> <img id="videoyoutube5" src="img/serviciosm/juzgadosdepolicia.png" alt="" class="imagenesdeservicio"></a>
+
+		</div>
+
+        <div style="display: none"> 
+            <div id="videoyoutube5_div">
+               
+            </div>
+        </div>
+
+        <!-- SCRIPT -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.pack.js"></script>
+
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.css" type="text/css" media="screen"/>
+
+ 		<script type="text/javascript"> 
+ 			$(document).ready(function() {
+        // $(".fancybox").fancybox();
+        
+				  $(".ifancybox").fancybox({
+					  'width' : '75%',
+					  'height' : '75%',
+					  'autoScale' : false,
+					  'transitionIn' : 'none',
+					  'transitionOut' : 'none',
+					  'type' : 'iframe'
+				 });		
+       		 });
+        </script>
+	</div>
+</section>
+
+	<!-- FOOTER -->
+	<footer class="contenedorfooter">
+		<div class="footer">
+			<img src="img/imagenfooter.png" alt="" id="footerimagen" 
+			class="animsition"
+			data-animsition-in-class="fade-in"
+			data-animsition-in-duration="700"
+			data-animsition-out-class="fade-out"
+			data-animsition-out-duration="500"> 
+		</div>
+	</footer>
+
+</body>
+</html>

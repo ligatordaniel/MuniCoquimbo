@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>NOTICIAS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" href="dist/css/animsition.min.css">
+	<script type="text/javascript" src="js/jsanimaciones.js"></script>
+	<script type="text/javascript" src="js/timeout.js"></script>
+	<script src="dist/js/animsition.min.js"></script>
+</head>
+
+<body>
+
+<section id="proyectos" class="animsition"
+  	data-animsition-in-class="fade-in"
+    data-animsition-in-duration="700"
+    data-animsition-out-class="fade-out"
+    data-animsition-out-duration="500">
+
+	<!-- BANNER -->
+	<div class="contenedorbanner">
+		<img src="img/coquimbno.png" alt="" class="imagenbanner"> 
+	</div>
+
+	<!-- IMAGEN DE NOTICIA -->
+	<div class="contenedorimagenedenoticia">
+		<img src="img/imagendenoticia.png" alt="" class="imagendenoticia">
+	</div>
+
+	<!-- BOTON FLOTANTE -->
+	<div>
+	    <div class='flotante-noticias' href='#'> 
+	    	<a href="Inicio.html"> 
+	    	<img src='img/home2.png' width="130px" border="0" class="animsition"
+		    data-animsition-in-class="fade-in-left-sm"
+		    data-animsition-in-duration="2000"
+		    data-animsition-out-class="fade-out-left-sm"      data-animsition-out-duration="5000"></a> 
+	  	</div> 
+  	</div>
+
+  	<!-- IMAGENES EN SLIDER -->
+	<div class="contenedorimagenesdeslide">
+
+		<div class="w3-content w3-display-container">
+	  <img class="imagenesdeslide" src="img/noticias/fotonoticia1.png" style="width:93%">
+	  <img class="imagenesdeslide" src="img/noticias/fotonoticia2.png" style="width:93%">
+	  <img class="imagenesdeslide" src="img/noticias/fotonoticia3.png" style="width:93%">
+	  <img class="imagenesdeslide" src="img/noticias/fotonoticia4.png" style="width:93%">
+
+	  <button class="w3-button w3-white w3-display-left" onclick="plusDivs(-1)">&#10095;</button>
+	  <button class="w3-button w3-white w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+	</div>
+
+	<!-- SCRIPT DE IMAGENES -->
+	<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("imagenesdeslide");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+	</script>
+
+	</div>
+
+	<div class="contenedordetwitteryvideo">
+		
+		<div class="contenedortwitter">
+			
+			<div class="twitter">
+				<a class="twitter-timeline" data-width="1000" data-height="800" href="https://twitter.com/municoquimbo">Tweets by TwitterDev</a> 
+
+				<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+				</div>
+				<div class="transparentdiv"></div>
+		</div>
+
+		<div class="contenedorvideos">
+			<div class="video">
+				<video src="videos/video1.mp4" width="340" height="200" controls controlslist="nodownload"> </video>
+				
+			</div>
+			<div class="video">
+				<video src="videos/video1.mp4" width="340" height="200" controls controlslist="nodownload"> </video>
+				
+			</div>
+			<div class="video">
+				<video src="videos/video1.mp4" width="340" height="200" controls controlslist="nodownload"> </video>
+				
+			</div>
+			<div class="video">
+				<video src="videos/video1.mp4" width="340" height="200" controls controlslist="nodownload"> </video>
+				 
+			</div>
+		</div>
+
+	</div>
+		
+</section>
+
+	<!-- FOOTER -->
+	<footer class="contenedorfooter">
+		<div class="footer">
+			<img src="img/imagenfooter.png" alt="" id="footerimagen" class="animsition"
+  				data-animsition-in-class="fade-in"
+  				data-animsition-in-duration="700"
+  				data-animsition-out-class="fade-out"
+  				data-animsition-out-duration="500"> 
+		</div>
+	</footer>
+
+</body>
+</html>
